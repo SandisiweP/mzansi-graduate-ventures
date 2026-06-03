@@ -226,3 +226,68 @@ function Footer() {
     </footer>
   );
 }
+
+function Mission() {
+  const pillars = [
+    {
+      icon: <Wifi className="h-5 w-5" />,
+      title: "Tech access, not tech barriers",
+      body: "Designed to work on a basic smartphone with low data — so graduates in rural and underprivileged areas aren't shut out.",
+    },
+    {
+      icon: <ShieldCheck className="h-5 w-5" />,
+      title: "Transparent, no gatekeepers",
+      body: "No middlemen, no kickbacks, no 'who you know'. Free guidance, in your hands, on your terms.",
+    },
+    {
+      icon: <GraduationCap className="h-5 w-5" />,
+      title: "Real skills development",
+      body: "Every step teaches a transferable skill — research, validation, sales, pricing — that strengthens your CV and your hustle.",
+    },
+    {
+      icon: <Sparkles className="h-5 w-5" />,
+      title: "Entrepreneurship made doable",
+      body: "Ultra-low-capital, ZAR-priced ideas grounded in South African realities: townships, stokvels, load-shedding, the informal economy.",
+    },
+    {
+      icon: <Briefcase className="h-5 w-5" />,
+      title: "Work experience while you build",
+      body: "Don't wait for a job to give you experience. Building a real business — even small — is the experience employers and clients respect.",
+    },
+  ];
+  return (
+    <section className="py-20">
+      <div className="mb-12 max-w-2xl">
+        <span className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card/40 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
+          Our mission
+        </span>
+        <h2 className="mt-4 font-display text-4xl font-bold md:text-5xl">
+          Five barriers we're tearing down.
+        </h2>
+        <p className="mt-4 text-lg text-muted-foreground">
+          Stats SA reported 19.5% graduate unemployment among 15–34 year-olds in 2024.
+          Spark is built for the graduates behind that number — and for every young
+          person told to wait their turn.
+        </p>
+      </div>
+      <div className="grid gap-4 md:grid-cols-3">
+        {pillars.map((p, i) => (
+          <motion.div
+            key={p.title}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: i * 0.05 }}
+            className="rounded-3xl border border-border/60 bg-card-gradient p-6"
+          >
+            <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-primary text-primary-foreground shadow-glow">
+              {p.icon}
+            </div>
+            <h3 className="mb-2 font-display text-lg font-semibold">{p.title}</h3>
+            <p className="text-sm text-muted-foreground">{p.body}</p>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+}

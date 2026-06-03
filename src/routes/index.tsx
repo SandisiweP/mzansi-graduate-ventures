@@ -95,6 +95,7 @@ function Hero() {
 function Bento() {
   return (
     <section className="py-16">
+      <div id="bento" />
       <div className="mb-12 max-w-2xl">
         <h2 className="font-display text-4xl font-bold md:text-5xl">
           Everything a first-time founder needs.

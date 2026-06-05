@@ -89,10 +89,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Spark — turn your ideas into a business" },
       { name: "description", content: "An AI mentor and idea generator for aspiring entrepreneurs. Discover what to build at the intersection of your skills, passions, and the world's needs." },
       { property: "og:title", content: "Spark — turn your ideas into a business" },
-      { property: "og:description", content: "An AI mentor and idea generator for aspiring entrepreneurs." },
+      { property: "og:description", content: "An AI mentor and idea generator for aspiring entrepreneurs. Discover what to build at the intersection of your skills, passions, and the world's needs." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Spark — turn your ideas into a business" },
+      { name: "twitter:description", content: "An AI mentor and idea generator for aspiring entrepreneurs. Discover what to build at the intersection of your skills, passions, and the world's needs." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6a9a2183-0615-406c-a51f-88116d889dd3/id-preview-78fbfc77--f41d62dd-7d71-4ed5-aa44-42beaf3793fc.lovable.app-1780472207141.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6a9a2183-0615-406c-a51f-88116d889dd3/id-preview-78fbfc77--f41d62dd-7d71-4ed5-aa44-42beaf3793fc.lovable.app-1780472207141.png" },
     ],
     links: [
       {
